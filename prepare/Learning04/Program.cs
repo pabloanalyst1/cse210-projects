@@ -16,7 +16,7 @@ public class Assignment
         return $"{_studentName} - {_topic}";
     }
 
-    // Método para obtener el nombre del estudiante (necesario para las clases derivadas)
+    // To get students name (necesario para las clases divisiones)
     public string GetStudentName()
     {
         return _studentName;
@@ -68,7 +68,7 @@ class Program
         Console.WriteLine(mathAssignment.GetSummary());
         Console.WriteLine(mathAssignment.GetHomeworkList());
 
-        // Crear y probar una asignación de escritura
+        // Creates and tries a History class
         WritingAssignment writingAssignment = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II");
         Console.WriteLine(writingAssignment.GetSummary());
         Console.WriteLine(writingAssignment.GetWritingInformation());
